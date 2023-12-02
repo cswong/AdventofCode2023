@@ -17,8 +17,11 @@ session_start();
 //In this example, the calibration values of these four lines are 12, 38, 15, and 77. Adding these together produces 142.
 
 
-//So what we're looking here to do is string parse from the left, find the first number, set that to Variable A. 
-//Then string parse the original string from the right and look for the first number and set that to Variable B.
+//So what we're looking here to do is break up the dataset.
+//Then loop through the dataset
+//For each line I'll grep the string for numbers. That will be broken into it's own array 
+//I'll grab the first item of the array and set that to Variable A. 
+//I'll grab the last item of the array and set that to Variable B.
 //Put Variable A and Variable B together to get final Result Variable C. 
 //We'll add Result Variable C to Output Variable D and we should get our answer.
 
